@@ -6,4 +6,10 @@ using
 - Mustache engine https://mustache.github.io/
 
 
-#Current twitterOAuth can't use stream api so I use search api instead but will perform laggy performance 
+Currently twitterOAuth can't use twitter stream/api 
+so I use search/api instead but will perform laggy performance 
+
+before using this code please obtain 
+- google map api key
+- twiiter api key
+then add it to include/config.inc.php then you good to go
