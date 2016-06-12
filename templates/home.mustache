@@ -1,0 +1,66 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+  <style>
+    html , body{
+      width : 100%
+      margin: 5px;
+      padding: 5px;
+    }
+    #map-canvas {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #input-canvas {
+        display: table;
+        width: 100%;
+    }
+    label {
+        display: table-cell;
+    }
+    span {
+        display: table-cell;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    #text-search {
+        width: 100%;
+    }
+    #submit-search {
+        display: table-cell;
+    }
+    input[type=text] {
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid #DDDDDD;
+    }
+
+    input[type=text]:focus{
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid rgba(81, 203, 238, 1);
+    }
+
+  </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWsWr_PjYbcT9y2E7uRobq2Wn7NrNZuHA"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://isudnop.com/tweetmaps/js/function.js"></script>
+  <head></head>
+  <body>
+    <div id="notice-bar"></div>
+    <div id="status"></div>
+    <div id="input-canvas">
+      <span><input type="text" name="location_name" id="text-search" placeholder="Nop Tweets Map! type city name here!"></span>
+      <input type="button" name="ongo" id="submit-search" value="SEARCH!" onclick="searchGeo()">
+    </div>
+    <div id="map-canvas"></div>
+  </body>
+</html>
