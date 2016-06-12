@@ -7,6 +7,7 @@ $m = new Mustache_Engine(array(
 		'loader' => new Mustache_Loader_FilesystemLoader("templates"),
 		'partials_loader' => new Mustache_Loader_FilesystemLoader("templates/partials")
 ));
-$data = null;
+$data = array();
+$data['map_api_key'] = configVariables::$GOOGLEMAP_APIKEY;
 echo $m->loadTemplate("home")->render($data);
 ?>
