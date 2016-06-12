@@ -1,9 +1,9 @@
 # tweetmaps
-tweet maps for testing , show tweet in current area and con perform search via text box
+tweet maps for testing , show tweet in current/search area via text box
 using
 - Google map API by Google
-- twitterOAuth lib by abraham  https://github.com/abraham/twitteroauth
-- Mustache engine https://mustache.github.io/
+- twitterOAuth (include/twitteroauth.php) by abraham  https://github.com/abraham/twitteroauth
+- Mustache engine (include/Mustache) https://mustache.github.io/
 
 
 Currently twitterOAuth can't use twitter stream/api 
